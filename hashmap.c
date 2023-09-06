@@ -57,6 +57,9 @@ HashMap * createMap(long capacity) {
   for(int i=0;i<capacity;i++){
     nuevoMapa->buckets[i]=NULL;
   }
+  nuevoMapa->capacity=capacity;
+  nuevoMapa->size=0;
+  nuevoMapa->current=-1;
     return nuevoMapa;
 }
 
