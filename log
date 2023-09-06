@@ -24,3 +24,20 @@ Wed 06 Sep 2023 10:23:18 PM UTC:
  tests:  1|5
 total_score: 10/70
 521b718
+Wed 06 Sep 2023 10:27:23 PM UTC: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:12: error: ‘capacity’ undeclared (first use in this function)
+   43 |   hash(key,capacity)
+      |            ^~~~~~~~
+hashmap.c:43:12: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:43:21: error: expected ‘;’ before ‘}’ token
+   43 |   hash(key,capacity)
+      |                     ^
+      |                     ;
+   44 | }
+      | ~                    
+Compilation failed
+2db7c7f
