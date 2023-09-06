@@ -65,3 +65,14 @@ hashmap.c:43:8: note: declared here
       |        ^~~~
 Compilation failed
 c266299
+Wed 06 Sep 2023 10:31:19 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:8: error: unused variable ‘valorHash’ [-Werror=unused-variable]
+   43 |   long valorHash = hash(key,map->capacity);
+      |        ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dc8d3b4
