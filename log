@@ -52,3 +52,16 @@ hashmap.c:43:12: error: ‘capacity’ undeclared (first use in this function)
 hashmap.c:43:12: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d48100c
+Wed 06 Sep 2023 10:30:41 PM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:43:15: error: called object ‘hash’ is not a function or function pointer
+   43 |   long hash = hash(key,map->capacity);
+      |               ^~~~
+hashmap.c:43:8: note: declared here
+   43 |   long hash = hash(key,map->capacity);
+      |        ^~~~
+Compilation failed
+c266299
