@@ -275,3 +275,9 @@ hashmap.c:109:18: error: ‘HashMap’ {aka ‘struct HashMap’} has no member 
       |                  current
 Compilation failed
 b930ae2
+Sat 09 Sep 2023 09:03:47 PM UTC: 
+ hashmap.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+ tests:  13|2
+total_score: 50/70
+6ab0dc2
