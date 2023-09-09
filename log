@@ -252,3 +252,9 @@ hashmap.c:100:50: error: expected identifier before ‘!=’ token
       |                                                  ^~
 Compilation failed
 2925bbd
+Sat 09 Sep 2023 08:59:10 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|2
+total_score: 50/70
+a96e28b
