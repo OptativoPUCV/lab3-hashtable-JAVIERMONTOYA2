@@ -94,3 +94,24 @@ Wed 06 Sep 2023 11:21:17 PM UTC:
  tests:  5|4
 total_score: 30/70
 e5db44e
+Sat 09 Sep 2023 08:26:18 PM UTC: 
+ hashmap.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:85:7: error: ‘a’ undeclared (first use in this function)
+   85 |       a=si
+      |       ^
+hashmap.c:85:7: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:85:9: error: ‘si’ undeclared (first use in this function); did you mean ‘sin’?
+   85 |       a=si
+      |         ^~
+      |         sin
+hashmap.c:85:11: error: expected ‘;’ before ‘}’ token
+   85 |       a=si
+      |           ^
+      |           ;
+   86 |     }
+      |     ~      
+Compilation failed
+accce99
