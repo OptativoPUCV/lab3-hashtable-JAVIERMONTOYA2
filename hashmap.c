@@ -102,11 +102,13 @@ Pair * firstMap(HashMap * map) {
       return map->buckets[i];
     }
   }
-  
   return NULL;
 }
 
 Pair * nextMap(HashMap * map) {
-
+  int i=map->current;
+  if(map->buckets[i+1]!=NULL){
+    return map->buckets[i+1];
+  }
     return NULL;
 }
