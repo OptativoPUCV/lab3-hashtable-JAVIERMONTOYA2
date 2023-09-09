@@ -121,3 +121,14 @@ Sat 09 Sep 2023 08:30:06 PM UTC:
  tests:  8|3
 total_score: 40/70
 5b9c3d1
+Sat 09 Sep 2023 08:44:22 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:77:9: error: unused variable ‘par’ [-Werror=unused-variable]
+   77 |   Pair* par = searchMap(map,key);
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+8aeb11d
