@@ -264,3 +264,14 @@ Sat 09 Sep 2023 09:01:46 PM UTC:
  tests:  13|2
 total_score: 50/70
 22ffb3c
+Sat 09 Sep 2023 09:02:38 PM UTC: 
+ hashmap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:109:18: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘curren’; did you mean ‘current’?
+  109 |   for(int i=map->curren;i<map->capacity;i++){
+      |                  ^~~~~~
+      |                  current
+Compilation failed
+b930ae2

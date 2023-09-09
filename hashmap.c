@@ -106,9 +106,8 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-  int i=map->current;
-  if(map->buckets[i+1]!=NULL){
-    return map->buckets[i+1];
+  for(int i=map->curren;i<map->capacity;i++){
+    
   }
     return NULL;
 }
