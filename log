@@ -198,3 +198,21 @@ Sat 09 Sep 2023 08:47:26 PM UTC:
  tests:  11|2
 total_score: 50/70
 24db620
+Sat 09 Sep 2023 08:52:17 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:99:5: error: expected ‘(’ before ‘)’ token
+   99 |   if)
+      |     ^
+      |     (
+hashmap.c:99:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   99 |   if)
+      |   ^~
+hashmap.c:100:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  100 |     return NULL;
+      |     ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1964930
